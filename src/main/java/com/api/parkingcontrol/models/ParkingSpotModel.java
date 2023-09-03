@@ -16,8 +16,8 @@ public class ParkingSpotModel implements Serializable {
     private UUID id; //identificar unico e universal
     @Column(nullable = false,unique = true,length  =10) // não null, unico, tamanho 10
     private String parkingSpotNumber; // numero da vaga
-    @Column(nullable = false,unique = true,length  =7)// não null, unico, tamanho 7
-    private String licencePlatCar; // placa do veiculo
+    @Column(nullable = false,unique = true,length  =10) // não null, unico, tamanho 7
+    private String licencePlateCar; // placa do veiculo
     @Column(nullable = false,length  = 70) //não null, tamanho 70
     private String brandCar; // marca do veiculo
     @Column(nullable = false,length  = 70) //não null, tamanho 70
@@ -50,12 +50,12 @@ public class ParkingSpotModel implements Serializable {
         this.parkingSpotNumber = parkingSpotNumber;
     }
 
-    public String getLicencePlatCar() {
-        return licencePlatCar;
+    public String getLicencePlateCar() {
+        return licencePlateCar;
     }
 
-    public void setLicencePlatCar(String licencePlatCar) {
-        this.licencePlatCar = licencePlatCar;
+    public void setLicencePlateCar(String licencePlateCar) {
+        this.licencePlateCar = licencePlateCar;
     }
 
     public String getBrandCar() {
